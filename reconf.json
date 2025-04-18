@@ -3,5 +3,10 @@
     "filename": "Makefile",
     "id": "81118dd8-7a9d-40f8-8cf3-b86d576f682d",
     "comment": "simple make file test\n"
+  },
+  {
+    "filename": "Cargo.toml",
+    "id": "427aef4f-aabc-4f1e-983c-1c8bce3383af",
+    "comment": "toml test\n"
   }
 ]
