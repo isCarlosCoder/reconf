@@ -1,0 +1,46 @@
+mod commands;
+mod utils;
+
+use clap::{Parser, Subcommand};
+
+#[derive(Parser)]
+#[command(name = "reconf")]
+#[command(about = "Manage and reuse configuration files between projects easily.")]
+#[command(version = "0.1.0")]
+struct Cli {
+    #[command(subcommand)]
+    command: Commands,
+}
+
+#[derive(Subcommand)]
+enum Commands {
+    #[command(about = "Setup reconf")]
+    Setup,
+
+    #[command(about = "Test reconf")]
+    Test,
+
+    #[command(about = "Save a configuration file")]
+    Save {
+        #[arg(help = "File to save as config")]
+        file: String,
+    },
+
+    #[command(about = "Get a configuration file")]
+    Get,
+
+    #[command(about = "Delete a configuration file from storage")]
+    Delete,
+}
+
+fn main() {
+    let cli = Cli::parse();
+
+    match cli.command {
+        Commands::Setup => commands::setup::run_setup(),
+        Commands::Test => commands::test::run_test(),
+        Commands::Save { file } => commands::save::save(file),
+        Commands::Get => commands::get::get(),
+        Commands::Delete => commands::delete::delete(),
+    }
+}
