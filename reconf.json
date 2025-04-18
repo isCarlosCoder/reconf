@@ -8,5 +8,10 @@
     "filename": "Cargo.toml",
     "id": "427aef4f-aabc-4f1e-983c-1c8bce3383af",
     "comment": "toml test\n"
+  },
+  {
+    "filename": "main.rs",
+    "id": "1455b17b-194d-4d64-a369-a7f530ec81ed",
+    "comment": "arquivo de teste para apagar novamente\n"
   }
 ]
