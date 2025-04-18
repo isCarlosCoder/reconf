@@ -1,15 +1,5 @@
 [
   {
-    "filename": "Cargo.toml",
-    "id": "46d79117-c654-4ea1-810c-bd14fb5777db",
-    "comment": "teste cargo.toml\n"
-  },
-  {
-    "filename": "Makefile",
-    "id": "31ac21b9-8687-40da-a3a6-c3ce37b1e441",
-    "comment": "teste makefile\n"
-  },
-  {
     "filename": "main.rs",
     "id": "e6c55567-734d-4c2e-8e7d-cb659f39f0c9",
     "comment": "teste main.rs\n"
